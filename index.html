@@ -19,7 +19,7 @@
                 <p>Photo by <a href="https://unsplash.com/@haliewestphoto" target="_blank">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA" target="_blank">Unsplash</a></p>
             </div>
         </div>
-        <div class="main-container">
+        <div class="content-container">
             <div class="introduction">
                 <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</p>
                 <p>You know you want to.</p>
@@ -27,40 +27,42 @@
             <form action="#" method = "post">
                 <div class="signup">
                     <p>Let's do this!</p>
-                    <span class="info-row">
+                    <div class="info-row">
                         <div>
                             <label for="firstName">First Name:</label>
+                            <input type="firstName" id="firstName" name="firstName">
                         </div>
-                        <input type="firstName" id="firstName" name="firstName" required>
                         <div>
                             <label for="lastName">Last Name:</label>
+                            <input type="lastName" id="lastName" name="lastName">
                         </div>
-                        <input type="lastName" id="lastName" name="lastName" required>
-                    </span>
+                    </div>
                     <div class="info-row">
                         <div>
                             <label for="email">Email:</label>
+                            <input type="email" id="email" name="email">
                         </div>
-                        <input type="email" id="email" name="email" required>
                         <div>
                             <label for="phone">Phone Number:</label>
+                            <input type="phone" id="phone" name="phone">
                         </div>
-                        <input type="phone" id="phone" name="phone" required>
                     </div>
                     <div class="info-row">
                         <div>
                             <label for="password">Password:</label>
+                            <input type="password" id="password" name="password" required>
                         </div>
-                        <input type="password" id="password" name="password" required>
                         <div>
                             <label for="confirmPassword">Confirm Password:</label>
+                            <input type="confirmPassword" id="confirmPassword" name="confirmPassword" required>
                         </div>
-                        <input type="confirmPassword" id="confirmPassword" name="confirmPassword" required>
                     </div>
                 </div>
                 <div class="submission">
                     <button>Create Account</button>
-                    <p>Already have an account?</p><a href="#login">Log in</a>
+                    <div>
+                        <p>Already have an account?</p><a href="#login">Log in</a>
+                    </div>
                 </div>
             </form>
         </div>

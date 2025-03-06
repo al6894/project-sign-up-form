@@ -3,8 +3,14 @@
     src: url(../fonts/Norse-Bold.otf);
 }
 
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 .container {
     display: flex;
+    background-color: rgb(241, 241, 241);
+    z-index: -2;
 }
 
 .card-container {
@@ -16,7 +22,6 @@
     position:absolute;
     width: 30%;
     height: 100%;
-    z-index: -1;
 }
 
 .card-body {
@@ -57,7 +62,7 @@
     color:white;
 }
 
-.main-container {
+.content-container {
     width: 70%;
     height: 100%;
 }
@@ -67,12 +72,49 @@
     padding-left: 40px;
 }
 
+.introduction p {
+    font-size: 1.2rem;
+    width: 640px;
+    word-wrap: break-word;
+}
+
 .signup {
-    padding-left: 40px;
+    padding: 50px;
+    background-color: white;
+}
+
+.info-row {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.info-row div {
+    display: flex;
+    flex-direction: column;
 }
 
 .submission {
+    margin-top: 2%;
     padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.submission div {
+    display: flex;
+    align-items: center;
+}
+
+.submission a {
+    color: #596D48;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.submission a:hover {
+    text-decoration: underline;
 }
 
 p {
@@ -94,15 +136,23 @@ div.main-content {
 
 button {
     margin-top: 10px;
-    padding: 10px 40px;
+    width: 17%;
+    padding: 14px;
     background-color: #596D48;
     border-radius: 10px;
+    border: 0;
+    color: white;
+    font-size: 1.1rem;
 }
 
 input {
+    padding: 4px 30px;
+    border-radius: 5px;
     border-color: #E5E7EB;
+    outline:none;
 }
 
 input:invalid {
     border-color: red;
+    background-color: #ffe6e6;
 }
